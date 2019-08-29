@@ -1,0 +1,32 @@
+[server]
+mode = "dev"
+port = 8989
+debug = true
+http_timeout = 10000
+jwt_timeout = 8640000
+log_path = "./log/ride-sharing.log"
+maps = "./map_data.json"
+
+
+[dev]
+timezone = "Asia/Shanghai"
+driver_base_url= "http://localhost:8989"
+order_base_url= "http://localhost:8989"
+passenger_base_url= "http://localhost:8989"
+
+
+
+[mysql]
+user = "scpman"
+password = "scpman.com"
+dbname = "ridesharing"
+host = "www.01.work" //此域名在卖,哈哈哈
+port = "3306"
+
+[switch]
+mysql = "on"
+
+
+[cache]
+redis_main = "127.0.0.1:6379"
+

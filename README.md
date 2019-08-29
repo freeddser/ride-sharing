@@ -94,7 +94,9 @@ GET:OrderService/orders/?id=order_id
 
 3.Driver上传自己的信息到RS系统.
 
+
 POST:trackerService/tracker/driver
+
     {
 	"driver_id":2001,
 	"latitude":120.430102,
